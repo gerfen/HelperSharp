@@ -1,10 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <!-- targets -->
   <PropertyGroup>
-    <TargetFrameworks>net35;net40;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1</TargetFrameworks>
   </PropertyGroup>
-
   <!-- build -->
   <PropertyGroup>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
@@ -12,9 +10,8 @@
     <WarningLevel>4</WarningLevel>
     <RestorePackages>true</RestorePackages>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath> 
+    <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
-
   <!-- assembly info -->
   <PropertyGroup>
     <AssemblyTitle>HelperSharp</AssemblyTitle>
@@ -27,7 +24,6 @@
     <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
     <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
   </PropertyGroup>
-
   <!-- nuget package info -->
   <PropertyGroup>
     <Authors>Diego Giacomelli</Authors>
@@ -40,9 +36,7 @@
     <RepositoryUrl>https://github.com/giacomelli/HelperSharp.git</RepositoryUrl>
     <PackageReleaseNotes>See changes at https://github.com/giacomelli/HelperSharp.</PackageReleaseNotes>
   </PropertyGroup>
-
   <PropertyGroup>
     <FrameworkPathOverride Condition="'$(TargetFramework)' == 'net35'">$(MSBuildProgramFiles32)\Reference Assemblies\Microsoft\Framework\.NETFramework\v3.5\Profile\Client</FrameworkPathOverride>
   </PropertyGroup>
-
 </Project>
